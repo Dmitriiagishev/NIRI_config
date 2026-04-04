@@ -1,0 +1,126 @@
+/* Основные настройки для всей панели */
+* {
+    border: none;
+    border-radius: 12px;
+    font-family: "Fira Code", "JetBrains Mono", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #01646d;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+/* Общие настройки для всех модулей */
+#workspaces,
+#window,
+#custom-hardware-wrap,
+#power-profiles-daemon,
+#cpu,
+#memory,
+#temperature,
+#disk,
+#wireplumber,
+#backlight,
+#network,
+#battery,
+#custom-lock,
+#custom-reboot,
+#custom-power,
+#clock,
+#tray {
+    background: rgba(1, 100, 109, 0.2);
+    border-radius: 12px;
+    padding: 0 12px;
+    margin: 4px 2px;
+    color: #01646d;
+}
+
+/* Настройки для групп */
+#group-hardware,
+#group-session {
+    background: transparent;
+    border-radius: 12px;
+}
+
+/* Рабочие пространства */
+#workspaces button {
+    background: transparent;
+    color: #01646d;
+    border-radius: 12px;
+    padding: 0 8px;
+    margin: 0 2px;
+}
+
+#workspaces button.active {
+    background: #01646d;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background: rgba(1, 100, 109, 0.4);
+    color: #ffffff;
+}
+
+/* Окно */
+#window {
+    background: rgba(1, 100, 109, 0.2);
+    border-radius: 12px;
+    padding: 0 16px;
+}
+
+/* Апплеты с иконками */
+#custom-hardware-wrap,
+#custom-lock,
+#custom-reboot,
+#custom-power {
+    background: rgba(1, 100, 109, 0.2);
+    border-radius: 12px;
+    padding: 0 10px;
+    margin: 4px 2px;
+}
+
+/* Индикаторы состояния */
+#cpu,
+#memory,
+#temperature,
+#disk,
+#wireplumber,
+#backlight,
+#network,
+#battery {
+    background: rgba(1, 100, 109, 0.2);
+    border-radius: 12px;
+    padding: 0 12px;
+}
+
+/* Иконки в трее */
+#tray {
+    background: rgba(1, 100, 109, 0.2);
+    border-radius: 12px;
+    padding: 0 8px;
+}
+
+/* Часы */
+#clock {
+    background: rgba(1, 100, 109, 0.2);
+    border-radius: 12px;
+    padding: 0 16px;
+    font-weight: bold;
+}
+
+/* Разделители и отступы */
+#custom-hardware-wrap {
+    padding: 0 8px;
+}
+
+/* Tooltip */
+tooltip {
+    background: #1e1e2e;
+    border: 1px solid #01646d;
+    border-radius: 12px;
+    color: #01646d;
+}
